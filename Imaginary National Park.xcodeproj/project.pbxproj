@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197988D423C51F0F00402D8D /* ParksListVC.swift */; };
 		19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D3E53823C37B5100C7799B /* AppDelegate.swift */; };
-		19D3E53B23C37B5100C7799B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D3E53A23C37B5100C7799B /* ViewController.swift */; };
-		19D3E53E23C37B5100C7799B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E53C23C37B5100C7799B /* Main.storyboard */; };
 		19D3E54023C37B5B00C7799B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E53F23C37B5B00C7799B /* Assets.xcassets */; };
 		19D3E54323C37B5B00C7799B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */; };
 		6F93B6DB80DE00D2E59AA810 /* Pods_Imaginary_National_Park.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF890B4A88A9CF3F6A2DC94 /* Pods_Imaginary_National_Park.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		197988D423C51F0F00402D8D /* ParksListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksListVC.swift; sourceTree = "<group>"; };
 		19D3E53523C37B5100C7799B /* Imaginary National Park.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imaginary National Park.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D3E53823C37B5100C7799B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		19D3E53A23C37B5100C7799B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		19D3E53D23C37B5100C7799B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		19D3E53F23C37B5B00C7799B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D3E54223C37B5B00C7799B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D3E54423C37B5B00C7799B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +38,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		197988CF23C51E9E00402D8D /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				197988D223C51ECE00402D8D /* Model */,
+				197988D123C51EC700402D8D /* View */,
+				197988D023C51EBA00402D8D /* Controller */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		197988D023C51EBA00402D8D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				197988D323C51ED700402D8D /* ParksListVC */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		197988D123C51EC700402D8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		197988D223C51ECE00402D8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		197988D323C51ED700402D8D /* ParksListVC */ = {
+			isa = PBXGroup;
+			children = (
+				197988D423C51F0F00402D8D /* ParksListVC.swift */,
+			);
+			path = ParksListVC;
+			sourceTree = "<group>";
+		};
 		19D3E52C23C37B5100C7799B = {
 			isa = PBXGroup;
 			children = (
@@ -61,9 +99,8 @@
 		19D3E53723C37B5100C7799B /* Imaginary National Park */ = {
 			isa = PBXGroup;
 			children = (
+				197988CF23C51E9E00402D8D /* MVC */,
 				19D3E53823C37B5100C7799B /* AppDelegate.swift */,
-				19D3E53A23C37B5100C7799B /* ViewController.swift */,
-				19D3E53C23C37B5100C7799B /* Main.storyboard */,
 				19D3E53F23C37B5B00C7799B /* Assets.xcassets */,
 				19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */,
 				19D3E54423C37B5B00C7799B /* Info.plist */,
@@ -149,7 +186,6 @@
 			files = (
 				19D3E54323C37B5B00C7799B /* LaunchScreen.storyboard in Resources */,
 				19D3E54023C37B5B00C7799B /* Assets.xcassets in Resources */,
-				19D3E53E23C37B5100C7799B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19D3E53B23C37B5100C7799B /* ViewController.swift in Sources */,
+				197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */,
 				19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,14 +225,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		19D3E53C23C37B5100C7799B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19D3E53D23C37B5100C7799B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -329,6 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Imaginary National Park/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,6 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Imaginary National Park/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
