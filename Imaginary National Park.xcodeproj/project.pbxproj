@@ -12,6 +12,7 @@
 		19D3E53E23C37B5100C7799B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E53C23C37B5100C7799B /* Main.storyboard */; };
 		19D3E54023C37B5B00C7799B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E53F23C37B5B00C7799B /* Assets.xcassets */; };
 		19D3E54323C37B5B00C7799B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */; };
+		6F93B6DB80DE00D2E59AA810 /* Pods_Imaginary_National_Park.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EF890B4A88A9CF3F6A2DC94 /* Pods_Imaginary_National_Park.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		19D3E53F23C37B5B00C7799B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19D3E54223C37B5B00C7799B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19D3E54423C37B5B00C7799B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EF890B4A88A9CF3F6A2DC94 /* Pods_Imaginary_National_Park.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Imaginary_National_Park.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C984E0467D3E7C09AEC7837 /* Pods-Imaginary National Park.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imaginary National Park.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Imaginary National Park/Pods-Imaginary National Park.debug.xcconfig"; sourceTree = "<group>"; };
+		BEC9EF8B0DD35344E92636E6 /* Pods-Imaginary National Park.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imaginary National Park.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imaginary National Park/Pods-Imaginary National Park.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F93B6DB80DE00D2E59AA810 /* Pods_Imaginary_National_Park.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				19D3E53723C37B5100C7799B /* Imaginary National Park */,
 				19D3E53623C37B5100C7799B /* Products */,
+				2F3FEA56394A8851F07290FA /* Pods */,
+				BC0A43FC3C2CD4F9D639D4A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "Imaginary National Park";
 			sourceTree = "<group>";
 		};
+		2F3FEA56394A8851F07290FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C984E0467D3E7C09AEC7837 /* Pods-Imaginary National Park.debug.xcconfig */,
+				BEC9EF8B0DD35344E92636E6 /* Pods-Imaginary National Park.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC0A43FC3C2CD4F9D639D4A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EF890B4A88A9CF3F6A2DC94 /* Pods_Imaginary_National_Park.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19D3E54723C37B5B00C7799B /* Build configuration list for PBXNativeTarget "Imaginary National Park" */;
 			buildPhases = (
+				8FC921A247EB582401F69AC2 /* [CP] Check Pods Manifest.lock */,
 				19D3E53123C37B5100C7799B /* Sources */,
 				19D3E53223C37B5100C7799B /* Frameworks */,
 				19D3E53323C37B5100C7799B /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FC921A247EB582401F69AC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Imaginary National Park-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19D3E53123C37B5100C7799B /* Sources */ = {
@@ -278,6 +324,7 @@
 		};
 		19D3E54823C37B5B00C7799B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C984E0467D3E7C09AEC7837 /* Pods-Imaginary National Park.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +342,7 @@
 		};
 		19D3E54923C37B5B00C7799B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC9EF8B0DD35344E92636E6 /* Pods-Imaginary National Park.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
