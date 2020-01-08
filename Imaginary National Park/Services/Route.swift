@@ -8,6 +8,7 @@
 
 import Foundation
 
+// this struct contains all the WS URLs
 struct Route {
     static let parksListUrl = "http://api.foxtur.com/v1/tours/"
 }

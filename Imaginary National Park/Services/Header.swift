@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 
+// this struct contains the WS required header
 struct Header {
     static let jsonHeader: HTTPHeaders = [
         "Accept": "application/json"

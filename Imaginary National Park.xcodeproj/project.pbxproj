@@ -16,6 +16,7 @@
 		195ECD6123C67664003250F8 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD6023C67664003250F8 /* Route.swift */; };
 		195ECD6423C67928003250F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD6323C67928003250F8 /* BaseViewController.swift */; };
 		195ECD6623C67B19003250F8 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD6523C67B19003250F8 /* Header.swift */; };
+		195ECD6B23C6826E003250F8 /* BaseViewController+Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD6A23C6826E003250F8 /* BaseViewController+Popup.swift */; };
 		197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197988D423C51F0F00402D8D /* ParksListVC.swift */; };
 		197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */; };
 		19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D3E53823C37B5100C7799B /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 		195ECD6023C67664003250F8 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		195ECD6323C67928003250F8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		195ECD6523C67B19003250F8 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		195ECD6A23C6826E003250F8 /* BaseViewController+Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController+Popup.swift"; sourceTree = "<group>"; };
 		197988D423C51F0F00402D8D /* ParksListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksListVC.swift; sourceTree = "<group>"; };
 		197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksListVC+Autlayout.swift"; sourceTree = "<group>"; };
 		19D3E53523C37B5100C7799B /* Imaginary National Park.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imaginary National Park.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				195ECD6323C67928003250F8 /* BaseViewController.swift */,
+				195ECD6A23C6826E003250F8 /* BaseViewController+Popup.swift */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */,
 				195ECD5F23C675A0003250F8 /* ParksListWS.swift in Sources */,
 				195ECD6623C67B19003250F8 /* Header.swift in Sources */,
+				195ECD6B23C6826E003250F8 /* BaseViewController+Popup.swift in Sources */,
 				195ECD6423C67928003250F8 /* BaseViewController.swift in Sources */,
 				197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */,
 				195ECD5823C66D5E003250F8 /* ParkTableviewCell.swift in Sources */,

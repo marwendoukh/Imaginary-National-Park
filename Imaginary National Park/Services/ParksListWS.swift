@@ -16,7 +16,8 @@ struct ParksListWS {
         Alamofire.request(Route.parksListUrl,
                           method: .get,
                           headers: Header.jsonHeader).response(completionHandler: { (response) in
-            
+                            
+                            // decode the json response
                             let parks = try? JSONDecoder().decode([Park].self, from: response.data ?? Data())
                             completion(parks)
                             

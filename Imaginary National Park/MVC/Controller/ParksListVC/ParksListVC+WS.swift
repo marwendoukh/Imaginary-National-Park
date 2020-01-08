@@ -19,8 +19,8 @@ extension ParksListVC {
                 self.parksList = parks
                 self.parksTableview.reloadData()
             } else {
-                // TODO: handle error occured
-                debugPrint("error in park list WS")
+                // error occured while retriving data from the WS ==> so show an alert
+                self.showAlertWithMessage(title: "", buttonTitle: "BaseViewController.alert.ok".localized, message: "BaseViewController.alert.errorOccuredWS".localized)
             }
             
         }
