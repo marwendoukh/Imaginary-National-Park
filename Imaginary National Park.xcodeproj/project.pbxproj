@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195ECD5223C66616003250F8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5123C66616003250F8 /* StringExtension.swift */; };
+		195ECD5323C66710003250F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 195ECD5523C66710003250F8 /* Localizable.strings */; };
 		197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197988D423C51F0F00402D8D /* ParksListVC.swift */; };
+		197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */; };
 		19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D3E53823C37B5100C7799B /* AppDelegate.swift */; };
 		19D3E54023C37B5B00C7799B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E53F23C37B5B00C7799B /* Assets.xcassets */; };
 		19D3E54323C37B5B00C7799B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */; };
@@ -15,7 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		195ECD5123C66616003250F8 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		195ECD5423C66710003250F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		197988D423C51F0F00402D8D /* ParksListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksListVC.swift; sourceTree = "<group>"; };
+		197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksListVC+Autlayout.swift"; sourceTree = "<group>"; };
 		19D3E53523C37B5100C7799B /* Imaginary National Park.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imaginary National Park.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D3E53823C37B5100C7799B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19D3E53F23C37B5B00C7799B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +44,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195ECD4A23C66383003250F8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				19D3E53823C37B5100C7799B /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		195ECD4B23C663BA003250F8 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				195ECD4C23C66477003250F8 /* Text */,
+				19D3E53F23C37B5B00C7799B /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		195ECD4C23C66477003250F8 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				195ECD5523C66710003250F8 /* Localizable.strings */,
+			);
+			name = Text;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		195ECD4F23C665CE003250F8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				195ECD5023C665E1003250F8 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		195ECD5023C665E1003250F8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				195ECD5123C66616003250F8 /* StringExtension.swift */,
+			);
+			name = Extensions;
+			path = "New Groupions";
+			sourceTree = "<group>";
+		};
 		197988CF23C51E9E00402D8D /* MVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				197988D423C51F0F00402D8D /* ParksListVC.swift */,
+				197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */,
 			);
 			path = ParksListVC;
 			sourceTree = "<group>";
@@ -99,10 +149,11 @@
 		19D3E53723C37B5100C7799B /* Imaginary National Park */ = {
 			isa = PBXGroup;
 			children = (
+				195ECD4A23C66383003250F8 /* AppDelegate */,
+				195ECD4F23C665CE003250F8 /* Helpers */,
 				197988CF23C51E9E00402D8D /* MVC */,
-				19D3E53823C37B5100C7799B /* AppDelegate.swift */,
-				19D3E53F23C37B5B00C7799B /* Assets.xcassets */,
 				19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */,
+				195ECD4B23C663BA003250F8 /* Ressources */,
 				19D3E54423C37B5B00C7799B /* Info.plist */,
 			);
 			path = "Imaginary National Park";
@@ -185,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19D3E54323C37B5B00C7799B /* LaunchScreen.storyboard in Resources */,
+				195ECD5323C66710003250F8 /* Localizable.strings in Resources */,
 				19D3E54023C37B5B00C7799B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +269,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195ECD5223C66616003250F8 /* StringExtension.swift in Sources */,
+				197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */,
 				197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */,
 				19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */,
 			);
@@ -225,6 +279,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		195ECD5523C66710003250F8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				195ECD5423C66710003250F8 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
