@@ -8,8 +8,9 @@
 
 import UIKit
 
-class ParksListVC: UIViewController {
+class ParksListVC: BaseViewController {
     
+    // UI elements
     let parkChoicesSegmentedControl: UISegmentedControl = {
         // "all" and "top 5" localized
         let items = ["ParksListVC.segmentedControl.all".localized, "ParksListVC.segmentedControl.top5".localized]
@@ -18,13 +19,26 @@ class ParksListVC: UIViewController {
         segmentedControl.selectedSegmentIndex = 0
         return segmentedControl
     }()
-
+    
+    let parksTableview: UITableView = {
+        let tableview = UITableView()
+        tableview.register(ParkTableviewCell.self, forCellReuseIdentifier: ParkTableviewCell.cellId)
+        tableview.translatesAutoresizingMaskIntoConstraints = false
+        return tableview
+    }()
+    
+    // list of parks
+    var parksList: [Park] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // set white background of the view controller
         view.backgroundColor = .white
         // autolayout of UI components
         setupViews()
+        // fetch parks list from WS
+        getParksListWS()
         
     }
 

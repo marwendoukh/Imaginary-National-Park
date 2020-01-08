@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		195ECD5223C66616003250F8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5123C66616003250F8 /* StringExtension.swift */; };
 		195ECD5323C66710003250F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 195ECD5523C66710003250F8 /* Localizable.strings */; };
+		195ECD5823C66D5E003250F8 /* ParkTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5723C66D5E003250F8 /* ParkTableviewCell.swift */; };
+		195ECD5A23C66F98003250F8 /* ParksListVC+WS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5923C66F98003250F8 /* ParksListVC+WS.swift */; };
+		195ECD5C23C67490003250F8 /* Park.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5B23C67490003250F8 /* Park.swift */; };
+		195ECD5F23C675A0003250F8 /* ParksListWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5E23C675A0003250F8 /* ParksListWS.swift */; };
+		195ECD6123C67664003250F8 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD6023C67664003250F8 /* Route.swift */; };
+		195ECD6423C67928003250F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD6323C67928003250F8 /* BaseViewController.swift */; };
+		195ECD6623C67B19003250F8 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD6523C67B19003250F8 /* Header.swift */; };
 		197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197988D423C51F0F00402D8D /* ParksListVC.swift */; };
 		197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */; };
 		19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D3E53823C37B5100C7799B /* AppDelegate.swift */; };
@@ -20,6 +27,13 @@
 /* Begin PBXFileReference section */
 		195ECD5123C66616003250F8 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		195ECD5423C66710003250F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		195ECD5723C66D5E003250F8 /* ParkTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkTableviewCell.swift; sourceTree = "<group>"; };
+		195ECD5923C66F98003250F8 /* ParksListVC+WS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksListVC+WS.swift"; sourceTree = "<group>"; };
+		195ECD5B23C67490003250F8 /* Park.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park.swift; sourceTree = "<group>"; };
+		195ECD5E23C675A0003250F8 /* ParksListWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksListWS.swift; sourceTree = "<group>"; };
+		195ECD6023C67664003250F8 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		195ECD6323C67928003250F8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		195ECD6523C67B19003250F8 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		197988D423C51F0F00402D8D /* ParksListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksListVC.swift; sourceTree = "<group>"; };
 		197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksListVC+Autlayout.swift"; sourceTree = "<group>"; };
 		19D3E53523C37B5100C7799B /* Imaginary National Park.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imaginary National Park.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +101,32 @@
 			path = "New Groupions";
 			sourceTree = "<group>";
 		};
+		195ECD5623C66D0A003250F8 /* TableviewCells */ = {
+			isa = PBXGroup;
+			children = (
+				195ECD5723C66D5E003250F8 /* ParkTableviewCell.swift */,
+			);
+			path = TableviewCells;
+			sourceTree = "<group>";
+		};
+		195ECD5D23C67585003250F8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				195ECD5E23C675A0003250F8 /* ParksListWS.swift */,
+				195ECD6023C67664003250F8 /* Route.swift */,
+				195ECD6523C67B19003250F8 /* Header.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		195ECD6223C678FA003250F8 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				195ECD6323C67928003250F8 /* BaseViewController.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
 		197988CF23C51E9E00402D8D /* MVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +140,7 @@
 		197988D023C51EBA00402D8D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				195ECD6223C678FA003250F8 /* BaseViewController */,
 				197988D323C51ED700402D8D /* ParksListVC */,
 			);
 			path = Controller;
@@ -108,6 +149,7 @@
 		197988D123C51EC700402D8D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				195ECD5623C66D0A003250F8 /* TableviewCells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -115,6 +157,7 @@
 		197988D223C51ECE00402D8D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				195ECD5B23C67490003250F8 /* Park.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -124,6 +167,7 @@
 			children = (
 				197988D423C51F0F00402D8D /* ParksListVC.swift */,
 				197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */,
+				195ECD5923C66F98003250F8 /* ParksListVC+WS.swift */,
 			);
 			path = ParksListVC;
 			sourceTree = "<group>";
@@ -153,6 +197,7 @@
 				195ECD4F23C665CE003250F8 /* Helpers */,
 				197988CF23C51E9E00402D8D /* MVC */,
 				19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */,
+				195ECD5D23C67585003250F8 /* Services */,
 				195ECD4B23C663BA003250F8 /* Ressources */,
 				19D3E54423C37B5B00C7799B /* Info.plist */,
 			);
@@ -187,6 +232,7 @@
 				19D3E53123C37B5100C7799B /* Sources */,
 				19D3E53223C37B5100C7799B /* Frameworks */,
 				19D3E53323C37B5100C7799B /* Resources */,
+				619D66843A7D4614A1C5DF91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +290,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		619D66843A7D4614A1C5DF91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Imaginary National Park/Pods-Imaginary National Park-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Imaginary National Park/Pods-Imaginary National Park-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8FC921A247EB582401F69AC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,9 +333,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195ECD6123C67664003250F8 /* Route.swift in Sources */,
 				195ECD5223C66616003250F8 /* StringExtension.swift in Sources */,
+				195ECD5C23C67490003250F8 /* Park.swift in Sources */,
 				197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */,
+				195ECD5F23C675A0003250F8 /* ParksListWS.swift in Sources */,
+				195ECD6623C67B19003250F8 /* Header.swift in Sources */,
+				195ECD6423C67928003250F8 /* BaseViewController.swift in Sources */,
 				197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */,
+				195ECD5823C66D5E003250F8 /* ParkTableviewCell.swift in Sources */,
+				195ECD5A23C66F98003250F8 /* ParksListVC+WS.swift in Sources */,
 				19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
