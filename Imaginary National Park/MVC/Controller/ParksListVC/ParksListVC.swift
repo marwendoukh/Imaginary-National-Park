@@ -35,6 +35,12 @@ class ParksListVC: BaseViewController {
         
         // set white background of the view controller
         view.backgroundColor = .white
+        // set tableview delegates
+        parksTableview.delegate = self
+        parksTableview.dataSource = self
+        // automatic tableviewCell height
+        parksTableview.estimatedRowHeight = 150
+        parksTableview.rowHeight = UITableViewAutomaticDimension
         // autolayout of UI components
         setupViews()
         // fetch parks list from WS

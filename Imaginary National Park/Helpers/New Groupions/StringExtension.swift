@@ -14,5 +14,10 @@ extension String {
         
         return NSLocalizedString(self, comment: "")
     }
+    
+    // convert string (that contains a date) to this format 01/01/2020
+    func formatDate() -> String {
+        return ""
+    }
 }
 

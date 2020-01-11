@@ -6,5 +6,8 @@ target 'Imaginary National Park' do
     use_frameworks!
     
     # Pods for Imaginary National Park
+    # Alamofire for Web services
     pod 'Alamofire'
+    # AlamofireImage for loading images from URL
+    pod 'AlamofireImage'
 end

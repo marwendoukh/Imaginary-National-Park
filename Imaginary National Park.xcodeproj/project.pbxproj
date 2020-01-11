@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194986A223C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986A123C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift */; };
+		195E84F023C7ABD80067E258 /* ParksListVC+Tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */; };
 		195ECD5223C66616003250F8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5123C66616003250F8 /* StringExtension.swift */; };
 		195ECD5323C66710003250F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 195ECD5523C66710003250F8 /* Localizable.strings */; };
 		195ECD5823C66D5E003250F8 /* ParkTableviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5723C66D5E003250F8 /* ParkTableviewCell.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		194986A123C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParkTableviewCell+Autolayout.swift"; sourceTree = "<group>"; };
+		195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksListVC+Tableview.swift"; sourceTree = "<group>"; };
 		195ECD5123C66616003250F8 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		195ECD5423C66710003250F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		195ECD5723C66D5E003250F8 /* ParkTableviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkTableviewCell.swift; sourceTree = "<group>"; };
@@ -60,6 +64,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		194986A323C9BFFB00A5CC66 /* ParkTableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				195ECD5723C66D5E003250F8 /* ParkTableviewCell.swift */,
+				194986A123C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift */,
+			);
+			path = ParkTableviewCell;
+			sourceTree = "<group>";
+		};
 		195ECD4A23C66383003250F8 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +119,7 @@
 		195ECD5623C66D0A003250F8 /* TableviewCells */ = {
 			isa = PBXGroup;
 			children = (
-				195ECD5723C66D5E003250F8 /* ParkTableviewCell.swift */,
+				194986A323C9BFFB00A5CC66 /* ParkTableviewCell */,
 			);
 			path = TableviewCells;
 			sourceTree = "<group>";
@@ -171,6 +184,7 @@
 				197988D423C51F0F00402D8D /* ParksListVC.swift */,
 				197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */,
 				195ECD5923C66F98003250F8 /* ParksListVC+WS.swift */,
+				195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */,
 			);
 			path = ParksListVC;
 			sourceTree = "<group>";
@@ -301,10 +315,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Imaginary National Park/Pods-Imaginary National Park-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -338,7 +354,9 @@
 			files = (
 				195ECD6123C67664003250F8 /* Route.swift in Sources */,
 				195ECD5223C66616003250F8 /* StringExtension.swift in Sources */,
+				195E84F023C7ABD80067E258 /* ParksListVC+Tableview.swift in Sources */,
 				195ECD5C23C67490003250F8 /* Park.swift in Sources */,
+				194986A223C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift in Sources */,
 				197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */,
 				195ECD5F23C675A0003250F8 /* ParksListWS.swift in Sources */,
 				195ECD6623C67B19003250F8 /* Header.swift in Sources */,

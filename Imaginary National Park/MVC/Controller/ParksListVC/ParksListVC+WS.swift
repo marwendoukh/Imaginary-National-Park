@@ -12,7 +12,11 @@ import Alamofire
 extension ParksListVC {
     
     func getParksListWS() {
+        
+        debugPrint("start fetching WS data ...")
         ParksListWS.parksWS { (parks) in
+            
+            debugPrint("WS finished with \(parks?.count ?? 0) elements")
             
             // check if parks is not nil or a problem occured when fetching data from the Web service
             if let parks = parks {
