@@ -11,6 +11,7 @@ import Alamofire
 import AlamofireImage
 
 extension ParksListVC: UITableViewDataSource, UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.parksList.count
     }
@@ -22,8 +23,12 @@ extension ParksListVC: UITableViewDataSource, UITableViewDelegate {
         // populate cell data
         populateData(cell: cell, park: park)
         
-        
         return cell ?? UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let parkId = parksList[indexPath.row].id
+        delegate?.didSelectPark(id: parkId)
     }
     
     // populate cell data

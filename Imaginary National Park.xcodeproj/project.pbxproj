@@ -12,6 +12,10 @@
 		194986A923C9DF6200A5CC66 /* ParkDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986A823C9DF6200A5CC66 /* ParkDetailsVC.swift */; };
 		194986AB23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986AA23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift */; };
 		194986AD23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986AC23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift */; };
+		194986B123CA0F0500A5CC66 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986B023CA0F0500A5CC66 /* Coordinator.swift */; };
+		194986B323CA0F4800A5CC66 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986B223CA0F4800A5CC66 /* ApplicationCoordinator.swift */; };
+		194986B523CA153F00A5CC66 /* ParkDetailsVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986B423CA153F00A5CC66 /* ParkDetailsVCCoordinator.swift */; };
+		194986B723CA157800A5CC66 /* ParksListVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986B623CA157800A5CC66 /* ParksListVCCoordinator.swift */; };
 		195E84F023C7ABD80067E258 /* ParksListVC+Tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */; };
 		195ECD5223C66616003250F8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5123C66616003250F8 /* StringExtension.swift */; };
 		195ECD5323C66710003250F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 195ECD5523C66710003250F8 /* Localizable.strings */; };
@@ -37,6 +41,10 @@
 		194986A823C9DF6200A5CC66 /* ParkDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailsVC.swift; sourceTree = "<group>"; };
 		194986AA23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParkDetailsVC+Autolayout.swift"; sourceTree = "<group>"; };
 		194986AC23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParkDetailsVC+WS.swift"; sourceTree = "<group>"; };
+		194986B023CA0F0500A5CC66 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		194986B223CA0F4800A5CC66 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		194986B423CA153F00A5CC66 /* ParkDetailsVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailsVCCoordinator.swift; sourceTree = "<group>"; };
+		194986B623CA157800A5CC66 /* ParksListVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksListVCCoordinator.swift; sourceTree = "<group>"; };
 		195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksListVC+Tableview.swift"; sourceTree = "<group>"; };
 		195ECD5123C66616003250F8 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		195ECD5423C66710003250F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -92,6 +100,7 @@
 		194986A723C9DF1A00A5CC66 /* ParkDetailsVC */ = {
 			isa = PBXGroup;
 			children = (
+				194986B423CA153F00A5CC66 /* ParkDetailsVCCoordinator.swift */,
 				194986A823C9DF6200A5CC66 /* ParkDetailsVC.swift */,
 				194986AA23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift */,
 				194986AC23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift */,
@@ -99,12 +108,14 @@
 			path = ParkDetailsVC;
 			sourceTree = "<group>";
 		};
-		195ECD4A23C66383003250F8 /* AppDelegate */ = {
+		195ECD4A23C66383003250F8 /* AppDelegate+Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				19D3E53823C37B5100C7799B /* AppDelegate.swift */,
+				194986B023CA0F0500A5CC66 /* Coordinator.swift */,
+				194986B223CA0F4800A5CC66 /* ApplicationCoordinator.swift */,
 			);
-			path = AppDelegate;
+			path = "AppDelegate+Coordinator";
 			sourceTree = "<group>";
 		};
 		195ECD4B23C663BA003250F8 /* Ressources */ = {
@@ -209,6 +220,7 @@
 		197988D323C51ED700402D8D /* ParksListVC */ = {
 			isa = PBXGroup;
 			children = (
+				194986B623CA157800A5CC66 /* ParksListVCCoordinator.swift */,
 				197988D423C51F0F00402D8D /* ParksListVC.swift */,
 				197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */,
 				195ECD5923C66F98003250F8 /* ParksListVC+WS.swift */,
@@ -238,7 +250,7 @@
 		19D3E53723C37B5100C7799B /* Imaginary National Park */ = {
 			isa = PBXGroup;
 			children = (
-				195ECD4A23C66383003250F8 /* AppDelegate */,
+				195ECD4A23C66383003250F8 /* AppDelegate+Coordinator */,
 				195ECD4F23C665CE003250F8 /* Helpers */,
 				197988CF23C51E9E00402D8D /* MVC */,
 				19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */,
@@ -386,6 +398,7 @@
 				195ECD5C23C67490003250F8 /* Park.swift in Sources */,
 				194986AB23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift in Sources */,
 				194986A223C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift in Sources */,
+				194986B123CA0F0500A5CC66 /* Coordinator.swift in Sources */,
 				197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */,
 				194986AD23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift in Sources */,
 				195ECD5F23C675A0003250F8 /* ParksListWS.swift in Sources */,
@@ -394,10 +407,13 @@
 				195ECD6423C67928003250F8 /* BaseViewController.swift in Sources */,
 				197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */,
 				194986A923C9DF6200A5CC66 /* ParkDetailsVC.swift in Sources */,
+				194986B723CA157800A5CC66 /* ParksListVCCoordinator.swift in Sources */,
+				194986B323CA0F4800A5CC66 /* ApplicationCoordinator.swift in Sources */,
 				195ECD5823C66D5E003250F8 /* ParkTableviewCell.swift in Sources */,
 				195ECD5A23C66F98003250F8 /* ParksListVC+WS.swift in Sources */,
 				19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */,
 				194986A523C9D82400A5CC66 /* ParksType.swift in Sources */,
+				194986B523CA153F00A5CC66 /* ParkDetailsVCCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

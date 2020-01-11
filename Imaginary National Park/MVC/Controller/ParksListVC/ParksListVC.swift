@@ -30,6 +30,9 @@ class ParksListVC: BaseViewController {
     // list of parks
     var parksList: [Park] = []
     
+    // delegate
+    weak var delegate: ParksListVCDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

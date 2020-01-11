@@ -12,17 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var mainNavigationController: UINavigationController?
+    private var applicationCoordinator: ApplicationCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-    
-        let parkListVC = ParksListVC()
-        mainNavigationController = UINavigationController(rootViewController: parkListVC)
-        mainNavigationController?.navigationBar.isTranslucent = true
-        window!.rootViewController = mainNavigationController
-        window!.makeKeyAndVisible()
+        let applicationCoordinator = ApplicationCoordinator(window: window ?? UIWindow())
+
+        self.applicationCoordinator = applicationCoordinator
+        applicationCoordinator.start()
         
         return true
     }

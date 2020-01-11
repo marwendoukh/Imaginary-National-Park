@@ -61,6 +61,9 @@ class ParkDetailsVC: BaseViewController {
         return button
     }()
     
+    // id park (that was choosed by the user)
+    var idPark: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // autolayout of UI components
