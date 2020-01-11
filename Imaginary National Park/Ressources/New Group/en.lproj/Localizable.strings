@@ -6,7 +6,13 @@
   Copyright © 2020 Marwen Doukh. All rights reserved.
 */
 
+// BaseVC
 "BaseViewController.alert.ok" = "OK";
 "BaseViewController.alert.errorOccuredWS" = "An error hs occured while loading data";
+
+// ParksList
 "ParksListVC.segmentedControl.all" = "All";
 "ParksListVC.segmentedControl.top5" = "Top 5";
+
+// Park detail
+"ParkDetailsVC.button.call" = "Call to book";

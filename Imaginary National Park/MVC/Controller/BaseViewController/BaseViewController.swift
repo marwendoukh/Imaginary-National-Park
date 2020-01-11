@@ -12,8 +12,9 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // set white background of the view controller
+        view.backgroundColor = .white
     }
     
 

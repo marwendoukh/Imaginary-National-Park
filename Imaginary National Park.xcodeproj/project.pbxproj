@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		194986A223C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986A123C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift */; };
 		194986A523C9D82400A5CC66 /* ParksType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986A423C9D82300A5CC66 /* ParksType.swift */; };
+		194986A923C9DF6200A5CC66 /* ParkDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986A823C9DF6200A5CC66 /* ParkDetailsVC.swift */; };
+		194986AB23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986AA23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift */; };
+		194986AD23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986AC23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift */; };
 		195E84F023C7ABD80067E258 /* ParksListVC+Tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */; };
 		195ECD5223C66616003250F8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5123C66616003250F8 /* StringExtension.swift */; };
 		195ECD5323C66710003250F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 195ECD5523C66710003250F8 /* Localizable.strings */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		194986A123C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParkTableviewCell+Autolayout.swift"; sourceTree = "<group>"; };
 		194986A423C9D82300A5CC66 /* ParksType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksType.swift; sourceTree = "<group>"; };
+		194986A823C9DF6200A5CC66 /* ParkDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailsVC.swift; sourceTree = "<group>"; };
+		194986AA23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParkDetailsVC+Autolayout.swift"; sourceTree = "<group>"; };
+		194986AC23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParkDetailsVC+WS.swift"; sourceTree = "<group>"; };
 		195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksListVC+Tableview.swift"; sourceTree = "<group>"; };
 		195ECD5123C66616003250F8 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		195ECD5423C66710003250F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -81,6 +87,16 @@
 				194986A423C9D82300A5CC66 /* ParksType.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		194986A723C9DF1A00A5CC66 /* ParkDetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				194986A823C9DF6200A5CC66 /* ParkDetailsVC.swift */,
+				194986AA23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift */,
+				194986AC23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift */,
+			);
+			path = ParkDetailsVC;
 			sourceTree = "<group>";
 		};
 		195ECD4A23C66383003250F8 /* AppDelegate */ = {
@@ -169,6 +185,7 @@
 			children = (
 				195ECD6223C678FA003250F8 /* BaseViewController */,
 				197988D323C51ED700402D8D /* ParksListVC */,
+				194986A723C9DF1A00A5CC66 /* ParkDetailsVC */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -367,13 +384,16 @@
 				195ECD5223C66616003250F8 /* StringExtension.swift in Sources */,
 				195E84F023C7ABD80067E258 /* ParksListVC+Tableview.swift in Sources */,
 				195ECD5C23C67490003250F8 /* Park.swift in Sources */,
+				194986AB23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift in Sources */,
 				194986A223C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift in Sources */,
 				197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */,
+				194986AD23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift in Sources */,
 				195ECD5F23C675A0003250F8 /* ParksListWS.swift in Sources */,
 				195ECD6623C67B19003250F8 /* Header.swift in Sources */,
 				195ECD6B23C6826E003250F8 /* BaseViewController+Popup.swift in Sources */,
 				195ECD6423C67928003250F8 /* BaseViewController.swift in Sources */,
 				197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */,
+				194986A923C9DF6200A5CC66 /* ParkDetailsVC.swift in Sources */,
 				195ECD5823C66D5E003250F8 /* ParkTableviewCell.swift in Sources */,
 				195ECD5A23C66F98003250F8 /* ParksListVC+WS.swift in Sources */,
 				19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */,

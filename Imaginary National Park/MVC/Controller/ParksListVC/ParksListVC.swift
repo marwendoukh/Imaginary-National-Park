@@ -33,8 +33,6 @@ class ParksListVC: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // set white background of the view controller
-        view.backgroundColor = .white
         // set tableview delegates
         parksTableview.delegate = self
         parksTableview.dataSource = self
