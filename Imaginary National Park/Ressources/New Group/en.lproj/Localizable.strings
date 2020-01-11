@@ -18,3 +18,5 @@
 // Park detail
 "ParkDetailsVC.button.bookable" = "Bookable: \n ";
 "ParkDetailsVC.button.call" = "Call to book";
+"ParkDetailsVC.alert.call" = "Call";
+"ParkDetailsVC.alert.cancel" = "Cancel";

@@ -10,6 +10,7 @@ import UIKit
 
 extension ParkDetailsVC {
     
+    // get park details
     func parkDetailsWS(parkId: Int?) {
         
         ParkDetailsWS.parkDetailsWS(parkId: parkId) { (park) in
@@ -25,6 +26,14 @@ extension ParkDetailsVC {
                 self.showAlertWithMessage(title: "", buttonTitle: "BaseViewController.alert.ok".localized, message: "BaseViewController.alert.errorOccuredWS".localized)
             }
             
+        }
+    }
+    
+    // get park contact informations
+    func contactInformationsWS() {
+        ParkDetailsWS.contactInformations { (contactInformation) in
+            
+            self.showCallingInformationAlert(contactInformation: contactInformation)
         }
     }
     

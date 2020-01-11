@@ -58,6 +58,7 @@ class ParkDetailsVC: BaseViewController {
     let callButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(callAction(sender:)), for: .touchUpInside)
         button.setTitle("ParkDetailsVC.button.call".localized, for: .normal)
         button.backgroundColor = .brown
         return button
@@ -96,6 +97,47 @@ class ParkDetailsVC: BaseViewController {
             + (park?.startDate?.formatDate() ?? "")
             + " - "
             + (park?.endDate?.formatDate() ?? "")
+    }
+    
+    // call button action
+    @objc func callAction(sender: UIButton) {
+        contactInformationsWS()
+    }
+    
+    func showCallingInformationAlert(contactInformation: ParkContactInformation?) {
+        
+        let title = (contactInformation?.companyName ?? "")
+            + " - "
+            + (contactInformation?.country ?? "")
+        
+        let msg = title + "\n" + (contactInformation?.street ?? "")
+        
+        //  show popup containing contact information + call action
+        self.showAlertWithTwoButtons(title: "",
+                                     button1Title: "ParkDetailsVC.alert.call".localized,
+                                     button2Title: "ParkDetailsVC.alert.cancel".localized,
+                                     message: msg, completionButton: { (buttonIndex) in
+                                        
+                                        switch buttonIndex {
+                                        // call
+                                        case 1:
+                                            self.callPhoneNumber(phone: contactInformation?.phone)
+                                        // cancel
+                                        case 2:
+                                            break
+                                        default:
+                                            break
+                                        }
+        })
+    }
+    
+    func callPhoneNumber(phone: String?) {
+        
+        if let phone = phone, let url = URL(string: "tel://\(phone)"),
+            UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url, options: [:], completionHandler:nil)
+            debugPrint("calling \(phone) ...")
+        }
     }
     
 }

@@ -23,6 +23,22 @@ extension BaseViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
-
+    
+    // alert with two buttons
+    func showAlertWithTwoButtons(title: String, button1Title: String, button2Title: String, message: String, completionButton: @escaping (Int) -> Void) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: button1Title, style: .default, handler: { (_: UIAlertAction) in
+            completionButton(1)
+        }))
+        
+        alert.addAction(UIAlertAction(title: button2Title, style: .default, handler: { (_: UIAlertAction) in
+            completionButton(2)
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
 
