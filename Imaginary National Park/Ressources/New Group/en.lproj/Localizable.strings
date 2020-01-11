@@ -15,4 +15,5 @@
 "ParksListVC.segmentedControl.top5" = "Top 5";
 
 // Park detail
+"ParkDetailsVC.button.bookable" = "Bookable: \n ";
 "ParkDetailsVC.button.call" = "Call to book";

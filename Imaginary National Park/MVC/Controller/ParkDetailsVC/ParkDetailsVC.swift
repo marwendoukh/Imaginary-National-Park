@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class ParkDetailsVC: BaseViewController {
-
+    
     // UI
     
     // scrollview
@@ -63,12 +65,37 @@ class ParkDetailsVC: BaseViewController {
     
     // id park (that was choosed by the user)
     var idPark: Int?
+    // park
+    var park: Park?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // autolayout of UI components
         setupViews()
-        
+        // call details WS
+        parkDetailsWS(parkId: idPark)
     }
-  
+    
+    func updateViewData() {
+        // load park icon from URL (park.thumb)
+        Alamofire.request(park?.thumb ?? "").responseImage { response in
+            if let image = response.result.value {
+                self.iconImageView.image = image
+            }
+        }
+        //title
+        titleLabel.text = park?.title
+        // description
+        descriptionLabel.text = park?.shortDescription
+        // bookable
+        bookableLabel.text = bookableText()
+    }
+    
+    func bookableText() -> String {
+        return "ParkDetailsVC.button.bookable".localized
+            + (park?.startDate?.formatDate() ?? "")
+            + " - "
+            + (park?.endDate?.formatDate() ?? "")
+    }
+    
 }

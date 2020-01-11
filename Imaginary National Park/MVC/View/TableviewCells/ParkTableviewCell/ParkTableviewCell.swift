@@ -52,6 +52,8 @@ class ParkTableviewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         // set autolayout constraints
         setupViews()
+        // disable selection color
+        self.selectionStyle = .none
     }
     
 }

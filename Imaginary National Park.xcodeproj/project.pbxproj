@@ -16,6 +16,7 @@
 		194986B323CA0F4800A5CC66 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986B223CA0F4800A5CC66 /* ApplicationCoordinator.swift */; };
 		194986B523CA153F00A5CC66 /* ParkDetailsVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986B423CA153F00A5CC66 /* ParkDetailsVCCoordinator.swift */; };
 		194986B723CA157800A5CC66 /* ParksListVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986B623CA157800A5CC66 /* ParksListVCCoordinator.swift */; };
+		194986B923CA5E0B00A5CC66 /* ParkDetailsWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986B823CA5E0A00A5CC66 /* ParkDetailsWS.swift */; };
 		195E84F023C7ABD80067E258 /* ParksListVC+Tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */; };
 		195ECD5223C66616003250F8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5123C66616003250F8 /* StringExtension.swift */; };
 		195ECD5323C66710003250F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 195ECD5523C66710003250F8 /* Localizable.strings */; };
@@ -45,6 +46,7 @@
 		194986B223CA0F4800A5CC66 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		194986B423CA153F00A5CC66 /* ParkDetailsVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailsVCCoordinator.swift; sourceTree = "<group>"; };
 		194986B623CA157800A5CC66 /* ParksListVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksListVCCoordinator.swift; sourceTree = "<group>"; };
+		194986B823CA5E0A00A5CC66 /* ParkDetailsWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailsWS.swift; sourceTree = "<group>"; };
 		195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksListVC+Tableview.swift"; sourceTree = "<group>"; };
 		195ECD5123C66616003250F8 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		195ECD5423C66710003250F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				195ECD5E23C675A0003250F8 /* ParksListWS.swift */,
+				194986B823CA5E0A00A5CC66 /* ParkDetailsWS.swift */,
 				195ECD6023C67664003250F8 /* Route.swift */,
 				195ECD6523C67B19003250F8 /* Header.swift */,
 			);
@@ -403,6 +406,7 @@
 				194986AD23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift in Sources */,
 				195ECD5F23C675A0003250F8 /* ParksListWS.swift in Sources */,
 				195ECD6623C67B19003250F8 /* Header.swift in Sources */,
+				194986B923CA5E0B00A5CC66 /* ParkDetailsWS.swift in Sources */,
 				195ECD6B23C6826E003250F8 /* BaseViewController+Popup.swift in Sources */,
 				195ECD6423C67928003250F8 /* BaseViewController.swift in Sources */,
 				197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */,

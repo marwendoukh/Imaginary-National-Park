@@ -12,4 +12,5 @@ import Foundation
 struct Route {
     static let parksListAllUrl = "http://api.foxtur.com/v1/tours/"
     static let parksListTop5Url = "http://api.foxtur.com/v1/tours/top5/"
+    static let parkDetailsUrl = "http://api.foxtur.com/v1/tours/"
 }

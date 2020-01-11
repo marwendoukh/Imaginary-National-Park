@@ -17,7 +17,12 @@ extension String {
     
     // convert string (that contains a date) to this format 01/01/2020
     func formatDate() -> String {
-        return ""
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        let date = dateFormatter.date(from: self) ?? Date()
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        let dateString = dateFormatter.string(from: date)
+        return dateString
     }
 }
 

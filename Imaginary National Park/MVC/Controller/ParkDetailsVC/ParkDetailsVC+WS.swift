@@ -6,4 +6,27 @@
 //  Copyright © 2020 Marwen Doukh. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension ParkDetailsVC {
+    
+    func parkDetailsWS(parkId: Int?) {
+        
+        ParkDetailsWS.parkDetailsWS(parkId: parkId) { (park) in
+            
+            debugPrint("park details WS finished")
+            
+            // check if parks is not nil or a problem occured when fetching data from the Web service
+            if let park = park {
+                self.park = park
+                self.updateViewData()
+            } else {
+                // error occured while retriving data from the WS ==> so show an alert
+                self.showAlertWithMessage(title: "", buttonTitle: "BaseViewController.alert.ok".localized, message: "BaseViewController.alert.errorOccuredWS".localized)
+            }
+            
+        }
+    }
+    
+}
+
