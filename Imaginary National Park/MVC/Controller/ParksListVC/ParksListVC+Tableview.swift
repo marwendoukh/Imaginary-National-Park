@@ -29,6 +29,9 @@ extension ParksListVC: UITableViewDataSource, UITableViewDelegate {
     // populate cell data
     
     func populateData(cell: ParkTableviewCell?, park: Park) {
+        
+        // reset imageview
+        cell?.iconImageView.image = UIImage()
         // load park icon from URL (park.thumb)
         Alamofire.request(park.thumb ?? "").responseImage { response in
             if let image = response.result.value {

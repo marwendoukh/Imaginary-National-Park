@@ -11,9 +11,9 @@ import Alamofire
 
 struct ParksListWS {
     
-    static func parksWS(completion: @escaping ([Park]?) -> Void) {
+    static func parksWS(parksTypeUrl: String, completion: @escaping ([Park]?) -> Void) {
      
-        Alamofire.request(Route.parksListUrl,
+        Alamofire.request(parksTypeUrl,
                           method: .get,
                           headers: Header.jsonHeader).response(completionHandler: { (response) in
                             

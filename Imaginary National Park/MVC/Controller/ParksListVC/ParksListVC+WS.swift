@@ -11,10 +11,10 @@ import Alamofire
 
 extension ParksListVC {
     
-    func getParksListWS() {
+    func getParksListWS(parkType: ParksType) {
         
         debugPrint("start fetching WS data ...")
-        ParksListWS.parksWS { (parks) in
+        ParksListWS.parksWS(parksTypeUrl: parkType.wsUrl, completion: { (parks) in
             
             debugPrint("WS finished with \(parks?.count ?? 0) elements")
             
@@ -27,6 +27,6 @@ extension ParksListVC {
                 self.showAlertWithMessage(title: "", buttonTitle: "BaseViewController.alert.ok".localized, message: "BaseViewController.alert.errorOccuredWS".localized)
             }
             
-        }
+        })
     }
 }

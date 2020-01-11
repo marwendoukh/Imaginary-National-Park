@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		194986A223C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986A123C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift */; };
+		194986A523C9D82400A5CC66 /* ParksType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194986A423C9D82300A5CC66 /* ParksType.swift */; };
 		195E84F023C7ABD80067E258 /* ParksListVC+Tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */; };
 		195ECD5223C66616003250F8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD5123C66616003250F8 /* StringExtension.swift */; };
 		195ECD5323C66710003250F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 195ECD5523C66710003250F8 /* Localizable.strings */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		194986A123C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParkTableviewCell+Autolayout.swift"; sourceTree = "<group>"; };
+		194986A423C9D82300A5CC66 /* ParksType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksType.swift; sourceTree = "<group>"; };
 		195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksListVC+Tableview.swift"; sourceTree = "<group>"; };
 		195ECD5123C66616003250F8 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		195ECD5423C66710003250F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -73,6 +75,14 @@
 			path = ParkTableviewCell;
 			sourceTree = "<group>";
 		};
+		194986A623C9D90700A5CC66 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				194986A423C9D82300A5CC66 /* ParksType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		195ECD4A23C66383003250F8 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		195ECD4F23C665CE003250F8 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				194986A623C9D90700A5CC66 /* Enum */,
 				195ECD5023C665E1003250F8 /* Extensions */,
 			);
 			path = Helpers;
@@ -366,6 +377,7 @@
 				195ECD5823C66D5E003250F8 /* ParkTableviewCell.swift in Sources */,
 				195ECD5A23C66F98003250F8 /* ParksListVC+WS.swift in Sources */,
 				19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */,
+				194986A523C9D82400A5CC66 /* ParksType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

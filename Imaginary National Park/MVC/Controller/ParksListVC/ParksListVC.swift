@@ -12,11 +12,11 @@ class ParksListVC: BaseViewController {
     
     // UI elements
     let parkChoicesSegmentedControl: UISegmentedControl = {
-        // "all" and "top 5" localized
-        let items = ["ParksListVC.segmentedControl.all".localized, "ParksListVC.segmentedControl.top5".localized]
-        let segmentedControl = UISegmentedControl(items: items)
+        
+        let segmentedControl = UISegmentedControl(items: ParksType.allTitles)
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         segmentedControl.selectedSegmentIndex = 0
+        segmentedControl.addTarget(self, action: #selector(changeParksType(sender:)), for: .valueChanged)
         return segmentedControl
     }()
     
@@ -44,8 +44,14 @@ class ParksListVC: BaseViewController {
         // autolayout of UI components
         setupViews()
         // fetch parks list from WS
-        getParksListWS()
+        getParksListWS(parkType: .all)
         
+    }
+    
+    @objc func changeParksType(sender: UISegmentedControl) {
+       
+        let parkType = ParksType.initFromInt(sender.selectedSegmentIndex)
+        getParksListWS(parkType: parkType)
     }
 
 }
