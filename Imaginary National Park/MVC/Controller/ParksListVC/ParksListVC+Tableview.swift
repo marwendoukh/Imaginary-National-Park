@@ -49,7 +49,7 @@ extension ParksListVC: UITableViewDataSource, UITableViewDelegate {
         // short description
         cell?.shortDescriptionLabel.text = park.shortDescription
         // available till
-        cell?.availableTillLabel.text = "ParksListVC.label.availableTill".localized + (park.endDate?.formatDate() ?? "")
+        cell?.availableTillLabel.text = "ParksListVC.label.availableTill".localized + ": " + (park.endDate?.formatDate() ?? "")
         // price
         cell?.priceLabel.text = (park.price ?? "") + " €"
         
