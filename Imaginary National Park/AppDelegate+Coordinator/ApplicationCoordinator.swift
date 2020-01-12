@@ -9,19 +9,25 @@
 import UIKit
 
 class ApplicationCoordinator: Coordinator {
-  
+    
     let window: UIWindow
-    let mainNavigationController: UINavigationController
+    let mainNavigationController: SplitVC
     let parksListVCCoordinator: ParksListVCCoordinator
-
-    init(window: UIWindow) { //4
+    
+    init(window: UIWindow) {
         self.window = window
-        mainNavigationController = UINavigationController()
-        mainNavigationController.navigationBar.isTranslucent = true
+        mainNavigationController = SplitVC()
         
-        // parksList VC
+        // parksList coordinator
         parksListVCCoordinator = ParksListVCCoordinator(presenter: mainNavigationController)
-       
+        
+        let parkListVC = ParksListVC()
+        // set the delegate (used in tableview selection)
+        parkListVC.delegate = parksListVCCoordinator
+        let masterVC = UINavigationController(rootViewController: parkListVC)
+        let detailVC = UINavigationController(rootViewController: NothingSelectedVC())
+        mainNavigationController.viewControllers = [masterVC, detailVC]
+        
     }
     
     func start() {

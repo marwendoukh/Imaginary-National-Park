@@ -10,11 +10,11 @@ import UIKit
 
 class ParkDetailsVCCoordinator: Coordinator {
     
-    private let presenter: UINavigationController
+    private let presenter: UISplitViewController
     private var parkDetailsVC: ParkDetailsVC?
     private var idPark: Int?
     
-    init(presenter: UINavigationController, idPark: Int?) {
+    init(presenter: SplitVC, idPark: Int?) {
         self.presenter = presenter
         self.idPark = idPark
     }
@@ -23,7 +23,7 @@ class ParkDetailsVCCoordinator: Coordinator {
         
         let parkDetailsVC = ParkDetailsVC()
         parkDetailsVC.idPark = idPark
-        presenter.pushViewController(parkDetailsVC, animated: true)
+        presenter.showDetailViewController(UINavigationController(rootViewController: parkDetailsVC), sender: self)
         self.parkDetailsVC = parkDetailsVC
     }
     

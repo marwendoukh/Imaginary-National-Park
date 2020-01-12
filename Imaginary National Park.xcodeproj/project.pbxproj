@@ -31,6 +31,10 @@
 		195ECD6B23C6826E003250F8 /* BaseViewController+Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195ECD6A23C6826E003250F8 /* BaseViewController+Popup.swift */; };
 		197988D523C51F0F00402D8D /* ParksListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197988D423C51F0F00402D8D /* ParksListVC.swift */; };
 		197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */; };
+		19A0E44923CBA6EE00A09FA6 /* NothingSelectedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0E44823CBA6EE00A09FA6 /* NothingSelectedVC.swift */; };
+		19A0E44C23CBA74600A09FA6 /* SplitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0E44B23CBA74600A09FA6 /* SplitVC.swift */; };
+		19A0E44E23CBA84400A09FA6 /* NothingSelectedVC+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0E44D23CBA84400A09FA6 /* NothingSelectedVC+Autolayout.swift */; };
+		19A0E45123CBA92200A09FA6 /* AssetsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0E45023CBA92200A09FA6 /* AssetsConstants.swift */; };
 		19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D3E53823C37B5100C7799B /* AppDelegate.swift */; };
 		19D3E54023C37B5B00C7799B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E53F23C37B5B00C7799B /* Assets.xcassets */; };
 		19D3E54323C37B5B00C7799B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */; };
@@ -62,6 +66,10 @@
 		195ECD6A23C6826E003250F8 /* BaseViewController+Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController+Popup.swift"; sourceTree = "<group>"; };
 		197988D423C51F0F00402D8D /* ParksListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksListVC.swift; sourceTree = "<group>"; };
 		197988D623C522D600402D8D /* ParksListVC+Autlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ParksListVC+Autlayout.swift"; sourceTree = "<group>"; };
+		19A0E44823CBA6EE00A09FA6 /* NothingSelectedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NothingSelectedVC.swift; sourceTree = "<group>"; };
+		19A0E44B23CBA74600A09FA6 /* SplitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitVC.swift; sourceTree = "<group>"; };
+		19A0E44D23CBA84400A09FA6 /* NothingSelectedVC+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NothingSelectedVC+Autolayout.swift"; sourceTree = "<group>"; };
+		19A0E45023CBA92200A09FA6 /* AssetsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsConstants.swift; sourceTree = "<group>"; };
 		19D3E53523C37B5100C7799B /* Imaginary National Park.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imaginary National Park.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D3E53823C37B5100C7799B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19D3E53F23C37B5B00C7799B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,6 +153,7 @@
 			children = (
 				194986A623C9D90700A5CC66 /* Enum */,
 				195ECD5023C665E1003250F8 /* Extensions */,
+				19A0E44F23CBA8FA00A09FA6 /* Constants */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -200,8 +209,10 @@
 			isa = PBXGroup;
 			children = (
 				195ECD6223C678FA003250F8 /* BaseViewController */,
+				19A0E44A23CBA72900A09FA6 /* SplitVC */,
 				197988D323C51ED700402D8D /* ParksListVC */,
 				194986A723C9DF1A00A5CC66 /* ParkDetailsVC */,
+				19A0E44723CBA60400A09FA6 /* NothingSelectedVC */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -233,6 +244,31 @@
 				195E84EF23C7ABD70067E258 /* ParksListVC+Tableview.swift */,
 			);
 			path = ParksListVC;
+			sourceTree = "<group>";
+		};
+		19A0E44723CBA60400A09FA6 /* NothingSelectedVC */ = {
+			isa = PBXGroup;
+			children = (
+				19A0E44823CBA6EE00A09FA6 /* NothingSelectedVC.swift */,
+				19A0E44D23CBA84400A09FA6 /* NothingSelectedVC+Autolayout.swift */,
+			);
+			path = NothingSelectedVC;
+			sourceTree = "<group>";
+		};
+		19A0E44A23CBA72900A09FA6 /* SplitVC */ = {
+			isa = PBXGroup;
+			children = (
+				19A0E44B23CBA74600A09FA6 /* SplitVC.swift */,
+			);
+			path = SplitVC;
+			sourceTree = "<group>";
+		};
+		19A0E44F23CBA8FA00A09FA6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				19A0E45023CBA92200A09FA6 /* AssetsConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		19D3E52C23C37B5100C7799B = {
@@ -404,9 +440,12 @@
 				195ECD5C23C67490003250F8 /* Park.swift in Sources */,
 				194986AB23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift in Sources */,
 				194986A223C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift in Sources */,
+				19A0E44E23CBA84400A09FA6 /* NothingSelectedVC+Autolayout.swift in Sources */,
 				194986B123CA0F0500A5CC66 /* Coordinator.swift in Sources */,
+				19A0E45123CBA92200A09FA6 /* AssetsConstants.swift in Sources */,
 				197988D723C522D600402D8D /* ParksListVC+Autlayout.swift in Sources */,
 				194986AD23C9E7B200A5CC66 /* ParkDetailsVC+WS.swift in Sources */,
+				19A0E44C23CBA74600A09FA6 /* SplitVC.swift in Sources */,
 				195ECD5F23C675A0003250F8 /* ParksListWS.swift in Sources */,
 				195ECD6623C67B19003250F8 /* Header.swift in Sources */,
 				194986B923CA5E0B00A5CC66 /* ParkDetailsWS.swift in Sources */,
@@ -418,6 +457,7 @@
 				194986B323CA0F4800A5CC66 /* ApplicationCoordinator.swift in Sources */,
 				195ECD5823C66D5E003250F8 /* ParkTableviewCell.swift in Sources */,
 				195ECD5A23C66F98003250F8 /* ParksListVC+WS.swift in Sources */,
+				19A0E44923CBA6EE00A09FA6 /* NothingSelectedVC.swift in Sources */,
 				19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */,
 				194986A523C9D82400A5CC66 /* ParksType.swift in Sources */,
 				194986B523CA153F00A5CC66 /* ParkDetailsVCCoordinator.swift in Sources */,
