@@ -12,7 +12,6 @@ class ParksListVC: BaseViewController {
     
     // UI elements
     let parkChoicesSegmentedControl: UISegmentedControl = {
-        
         let segmentedControl = UISegmentedControl(items: ParksType.allTitles)
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         segmentedControl.selectedSegmentIndex = 0
@@ -32,6 +31,9 @@ class ParksListVC: BaseViewController {
     
     // delegate
     weak var delegate: ParksListVCDelegate?
+    
+    // image placeholder (while loading images from remote URL)
+    let placeholderImage = UIImage(named: AssetsConstants.placeholder)
     
     override func viewDidLoad() {
         super.viewDidLoad()

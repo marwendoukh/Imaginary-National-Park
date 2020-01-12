@@ -13,9 +13,14 @@ extension ParkDetailsVC {
     // get park details
     func parkDetailsWS(parkId: Int?) {
         
+        // show loader
+        self.showLoader()
+        // call WS
         ParkDetailsWS.parkDetailsWS(parkId: parkId) { (park) in
             
             debugPrint("park details WS finished")
+            // hide loader
+            self.hideLoader()
             
             // check if parks is not nil or a problem occured when fetching data from the Web service
             if let park = park {
@@ -31,8 +36,14 @@ extension ParkDetailsVC {
     
     // get park contact informations
     func contactInformationsWS() {
+        
+        // show loader
+        self.showLoader()
+        // call WS
         ParkDetailsWS.contactInformations { (contactInformation) in
-            
+            // hide loader
+            self.hideLoader()
+            // show a popup to the user containing park information
             self.showCallingInformationAlert(contactInformation: contactInformation)
         }
     }

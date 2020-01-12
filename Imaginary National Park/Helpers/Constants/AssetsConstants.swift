@@ -10,4 +10,5 @@ import Foundation
 
 struct AssetsConstants {
     static let parkLogo = "parkLogo"
+    static let placeholder = "placeholder"
 }

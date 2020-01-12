@@ -35,6 +35,7 @@
 		19A0E44C23CBA74600A09FA6 /* SplitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0E44B23CBA74600A09FA6 /* SplitVC.swift */; };
 		19A0E44E23CBA84400A09FA6 /* NothingSelectedVC+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0E44D23CBA84400A09FA6 /* NothingSelectedVC+Autolayout.swift */; };
 		19A0E45123CBA92200A09FA6 /* AssetsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0E45023CBA92200A09FA6 /* AssetsConstants.swift */; };
+		19A0E45323CBB54000A09FA6 /* BaseViewController+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A0E45223CBB54000A09FA6 /* BaseViewController+Loader.swift */; };
 		19D3E53923C37B5100C7799B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D3E53823C37B5100C7799B /* AppDelegate.swift */; };
 		19D3E54023C37B5B00C7799B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E53F23C37B5B00C7799B /* Assets.xcassets */; };
 		19D3E54323C37B5B00C7799B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19D3E54123C37B5B00C7799B /* LaunchScreen.storyboard */; };
@@ -70,6 +71,7 @@
 		19A0E44B23CBA74600A09FA6 /* SplitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitVC.swift; sourceTree = "<group>"; };
 		19A0E44D23CBA84400A09FA6 /* NothingSelectedVC+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NothingSelectedVC+Autolayout.swift"; sourceTree = "<group>"; };
 		19A0E45023CBA92200A09FA6 /* AssetsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsConstants.swift; sourceTree = "<group>"; };
+		19A0E45223CBB54000A09FA6 /* BaseViewController+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseViewController+Loader.swift"; sourceTree = "<group>"; };
 		19D3E53523C37B5100C7799B /* Imaginary National Park.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imaginary National Park.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19D3E53823C37B5100C7799B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19D3E53F23C37B5B00C7799B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			children = (
 				195ECD6323C67928003250F8 /* BaseViewController.swift */,
 				195ECD6A23C6826E003250F8 /* BaseViewController+Popup.swift */,
+				19A0E45223CBB54000A09FA6 /* BaseViewController+Loader.swift */,
 			);
 			path = BaseViewController;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				195ECD5223C66616003250F8 /* StringExtension.swift in Sources */,
 				195E84F023C7ABD80067E258 /* ParksListVC+Tableview.swift in Sources */,
 				195ECD5C23C67490003250F8 /* Park.swift in Sources */,
+				19A0E45323CBB54000A09FA6 /* BaseViewController+Loader.swift in Sources */,
 				194986AB23C9DF9900A5CC66 /* ParkDetailsVC+Autolayout.swift in Sources */,
 				194986A223C9BD7D00A5CC66 /* ParkTableviewCell+Autolayout.swift in Sources */,
 				19A0E44E23CBA84400A09FA6 /* NothingSelectedVC+Autolayout.swift in Sources */,

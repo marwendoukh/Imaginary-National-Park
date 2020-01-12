@@ -10,6 +10,33 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    // black transparent view in the background of the loader
+    let loaderBackground: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        
+        return view
+    }()
+    
+    // loader container view
+    let loaderContainerView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .white
+        
+        return view
+    }()
+    
+    // loader view
+    let loader: UIActivityIndicatorView = {
+        let loader = UIActivityIndicatorView()
+        loader.translatesAutoresizingMaskIntoConstraints = false
+        loader.color = .brown
+        
+        return loader
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

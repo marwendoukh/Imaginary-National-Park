@@ -30,6 +30,8 @@ class ParkDetailsVC: BaseViewController {
     // ui elements
     let iconImageView: UIImageView = {
         let imageview = UIImageView()
+        // place holder while retrieving image from URL
+        imageview.image = UIImage(named: AssetsConstants.placeholder)
         imageview.translatesAutoresizingMaskIntoConstraints = false
         return imageview
     }()
